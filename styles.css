@@ -1,0 +1,122 @@
+body {
+    font-size: 18px;
+    color: #2D3748;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #3C8527;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 39px;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+header p {
+    font-style: italic;
+}
+
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #FFFFFF;
+    margin-right: 10px;
+    object-fit: cover; 
+}
+
+article h2 {
+    font-size: 34px;
+    color: #28651C;
+}
+
+.post-meta {
+    color: #667267;
+}
+
+.post-img-left {
+    float: left;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 20px 10px 0;
+}
+
+.post-img-right {
+    float: right;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 0 10px 20px;
+}
+
+article {
+    overflow: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    grid-column: 1 / 3;
+    grid-row: 1;
+}
+
+main {
+    grid-column: 2;
+    grid-row: 2;
+    padding: 20px;
+}
+
+aside {
+    grid-column: 21
+    grid-row: 2;
+    padding: 20px;
+}
+
+aside section {
+    border-left: 3px solid #28651C;
+    padding-left: 10px;
+}
+
+aside .about {
+    border-left: none;
+}
+
+footer {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    background-color: #28651C;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+aside h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #28651C;
+}
+
+.about {
+    background-color: #E2E8F0;
+    padding: 15px;
+}
+
+.about h3 {
+    color: #333322;
+}
+
+aside a {
+    color: #2879B8;
+}
